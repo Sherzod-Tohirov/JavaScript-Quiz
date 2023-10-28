@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Quiz</title>
+	<link rel="icon" type="icon/x-icon" href="./images/svg/js.svg">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script defer src="./js/library/three.min.js"></script>
+	<script defer src="./js/library/vanta.min.js"></script>
+	<script defer src="./js/library/anime.es.js"></script>
+	<script defer src="./js/library/anime.min.js"></script>
+	<script defer src="./js/data.js"></script>
+	<script defer src="./js/app.js"></script>
+</head>
+<body class="site-body">
+ <template class="js-main-template">
+	<main class="site-main">
+		<section class="quiz">
+			<h1 class="visually-hidden">JavaScript Quiz</h1>
+			<div class="container">
+				<div class="quiz__wrapper">
+					<h2 class="visually-hidden">This is JavaScript Quiz</h2>
+				<div class="quiz__card js-card">
+					<template class="js-preview-template">
+						<h3 class="quiz__preview-title" title="Siz testni tugatdingiz !">Siz testni tugatdingiz!</h3>
+						<button class="quiz__preview-btn js-preview-btn">Natijangizni ko'ring !</button>
+					</template>
+					<template class="js-results-template">
+						 <div class="quiz__results-wrapper">
+							<h3 class="quiz__results-title js-results-title"title=""></h3>
+							 <div class="quiz__results-details-wrapper">
+								<h4 class="quiz__results-details-title" title="Javoblar ro'yxati">
+									Javoblar ro'yxati
+								</h4>
+								<strong class="quiz__results-details-desc">Jami sarflangan vaqt: <span class="quiz__results-stage js-spent-time"></span></strong>
+								<ol class="quiz__results__list js-result-list"></ol>
+							 </div>
+						 </div>
+					</template>
+					<div class="quiz__details-wrapper">
+						<span class="quiz__counter js-counter">1 / 10</span>
+						<time class="quiz__time js-time" datetime="00:00"><span class="js-minutes">00</span>:<span class="js-seconds">00</span></time>
+					</div>
+					<form class="quiz__form js-form">
+						<template class="js-quiz-template">
+							<div class="quiz__form-group">
+								<h3 class="quiz__question-title js-question-title" title="">
+									
+								</h3>
+								<div class="quiz__input-group">
+									<div class="quiz__inner-form-group">
+										<input id="a" class="quiz__input js-quiz-input" type="radio" value="a" name="answer">
+										<label class="quiz__label js-a" for="a"></label>
+									</div>
+									<div class="quiz__inner-form-group">
+										<input id="b" class="quiz__input js-quiz-input" type="radio" value="b" name="answer">
+										<label class="quiz__label js-b" for="b"></label>
+									</div>
+									<div class="quiz__inner-form-group">
+										<input id="c" class="quiz__input js-quiz-input" type="radio" value="c" name="answer">
+										<label class="quiz__label js-c" for="c"></label>
+									</div>
+									<div class="quiz__inner-form-group">
+										<input id="d" class="quiz__input js-quiz-input" type="radio" value="d" name="answer">
+										<label class="quiz__label js-d" for="d"></label>
+									</div>
+								</div>
+								<button class="quiz__next-btn js-next-btn" type="button">Next</button>
+							</div>
+						</template>
+					</form>
+				</div>
+				</div>
+			</div>
+		</section>
+	 </main>
+ </template>
+ <div class="overlay"></div>
+<div class="play">
+	<div class="play__wrapper">
+		<h2 class="play__title js-play-title" title="Quizni boshlash">Quizni boshlash</h2>
+		<button class="play__btn js-play-btn"></button>
+	</div>
+</div>
+</body>
+</html>
